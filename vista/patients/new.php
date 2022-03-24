@@ -13,27 +13,17 @@ if (!isset($_SESSION['cargo']) || $_SESSION['cargo'] != 1) {
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Acceso - Clinical Journal</title>
+  <title>Acceso - Clinical Journal v1</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="../../assets/css/tailwind.output.css" />
   <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
   <script src="../../assets/js/init-alpine.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.css" />
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js" defer></script>
-  <script src="../../assets/js/charts-lines.js" defer></script>
-  <script src="../../assets/js/charts-pie.js" defer></script>
 
-  <!--DataTables [ OPTIONAL ]-->
-  <link href="../..\assets\plugins/DataTables/css/datatables.css" rel="stylesheet">
+  <script src="../..\assets\js\jquery.min.js"></script>
 
-  <script src="../../assets/plugins/DataTables/js/datatables.min.js"></script>
-  <script type="text/javascript">
-    $(document).ready(function() {
-      $('#myTable').DataTable();
-    });
-  </script>
-
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 
 <body>
@@ -41,13 +31,13 @@ if (!isset($_SESSION['cargo']) || $_SESSION['cargo'] != 1) {
     <!-- Desktop sidebar -->
     <aside class="z-20 hidden w-64 overflow-y-auto bg-white dark:bg-gray-800 md:block flex-shrink-0">
       <div class="py-4 text-gray-500 dark:text-gray-400">
-        <a class="ml-6 text-lg font-bold text-gray-800 dark:text-gray-200" href="pages-admin.php">
+        <a class="ml-6 text-lg font-bold text-gray-800 dark:text-gray-200" href="../admin/pages-admin.php">
           Clinical Journal
         </a>
         <ul class="mt-6">
           <li class="relative px-6 py-3">
-            <span class="absolute inset-y-0 left-0 w-1 bg-teal-600 rounded-tr-lg rounded-br-lg" aria-hidden="true"></span>
-            <a class="inline-flex items-center w-full text-sm font-semibold text-gray-800 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200 dark:text-gray-100" href="pages-admin.php">
+
+            <a class="inline-flex items-center w-full text-sm font-semibold text-gray-800 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200 dark:text-gray-100" href="../admin/pages-admin.php">
               <svg class="w-5 h-5" aria-hidden="true" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
                 <path d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path>
               </svg>
@@ -68,6 +58,7 @@ if (!isset($_SESSION['cargo']) || $_SESSION['cargo'] != 1) {
           </li>
 
           <li class="relative px-6 py-3">
+            <span class="absolute inset-y-0 left-0 w-1 bg-teal-600 rounded-tr-lg rounded-br-lg" aria-hidden="true"></span>
             <a class="inline-flex items-center w-full text-sm font-semibold transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200" href="../../folder/patients.php">
               <svg class="w-5 h-5" aria-hidden="true" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
 
@@ -78,6 +69,7 @@ if (!isset($_SESSION['cargo']) || $_SESSION['cargo'] != 1) {
           </li>
 
           <li class="relative px-6 py-3">
+
             <a class="inline-flex items-center w-full text-sm font-semibold transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200" href="../../folder/doctor.php">
               <svg class="w-5 h-5" aria-hidden="true" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"></path>
@@ -97,6 +89,7 @@ if (!isset($_SESSION['cargo']) || $_SESSION['cargo'] != 1) {
 
 
           <li class="relative px-6 py-3">
+
             <a class="inline-flex items-center w-full text-sm font-semibold transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200" href="../../folder/specialty.php">
               <svg class="w-5 h-5" aria-hidden="true" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z" />
@@ -112,7 +105,9 @@ if (!isset($_SESSION['cargo']) || $_SESSION['cargo'] != 1) {
               <span class="ml-4">Horarios</span>
             </a>
           </li>
+
         </ul>
+
       </div>
     </aside>
     <!-- Mobile sidebar -->
@@ -125,8 +120,8 @@ if (!isset($_SESSION['cargo']) || $_SESSION['cargo'] != 1) {
         </a>
         <ul class="mt-6">
           <li class="relative px-6 py-3">
-            <span class="absolute inset-y-0 left-0 w-1 bg-teal-600 rounded-tr-lg rounded-br-lg" aria-hidden="true"></span>
-            <a class="inline-flex items-center w-full text-sm font-semibold text-gray-800 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200 dark:text-gray-100" href="pages-admin.php">
+
+            <a class="inline-flex items-center w-full text-sm font-semibold text-gray-800 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200 dark:text-gray-100" href="../admin/pages-admin.php">
               <svg class="w-5 h-5" aria-hidden="true" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
                 <path d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path>
               </svg>
@@ -144,6 +139,7 @@ if (!isset($_SESSION['cargo']) || $_SESSION['cargo'] != 1) {
             </a>
           </li>
           <li class="relative px-6 py-3">
+            <span class="absolute inset-y-0 left-0 w-1 bg-teal-600 rounded-tr-lg rounded-br-lg" aria-hidden="true"></span>
             <a class="inline-flex items-center w-full text-sm font-semibold transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200" href="../../folder/patients.php">
               <svg class="w-5 h-5" aria-hidden="true" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"></path>
@@ -152,6 +148,7 @@ if (!isset($_SESSION['cargo']) || $_SESSION['cargo'] != 1) {
             </a>
           </li>
           <li class="relative px-6 py-3">
+            <span class="absolute inset-y-0 left-0 w-1 bg-teal-600 rounded-tr-lg rounded-br-lg" aria-hidden="true"></span>
             <a class="inline-flex items-center w-full text-sm font-semibold transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200" href="../../folder/doctor.php">
               <svg class="w-5 h-5" aria-hidden="true" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"></path>
@@ -183,11 +180,7 @@ if (!isset($_SESSION['cargo']) || $_SESSION['cargo'] != 1) {
               <span class="ml-4">Horarios</span>
             </a>
           </li>
-
-
         </ul>
-
-
       </div>
     </aside>
     <div class="flex flex-col flex-1 w-full">
@@ -199,21 +192,18 @@ if (!isset($_SESSION['cargo']) || $_SESSION['cargo'] != 1) {
               <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path>
             </svg>
           </button>
-
-          <!-- Barra de busqueda -->
+          <!-- Search input -->
           <div class="flex justify-center flex-1 lg:mr-32">
             <div class="relative w-full max-w-xl mr-6 focus-within:text-teal-500">
-              <div class="absolute inset-y-0 flex items-center pl-2">                
+              <div class="absolute inset-y-0 flex items-center pl-2">
+                
               </div>              
             </div>
           </div>
-
-          <ul class="flex items-center flex-shrink-0 space-x-6">   
-            <!-- inicio area de tema y notificaciones -->
-
-            <!-- Fin area de tema y notificaciones -->
-
-            <!-- Menu del perfil -->
+          <ul class="flex items-center flex-shrink-0 space-x-6">
+            
+            
+            <!-- Profile menu -->
             <li class="relative">
               <button class="align-middle rounded-full focus:shadow-outline-teal focus:outline-none" @click="toggleProfileMenu" @keydown.escape="closeProfileMenu" aria-label="Account" aria-haspopup="true">
                 <img class="object-cover w-8 h-8 rounded-full" src="https://www.creativefabrica.com/wp-content/uploads/2019/02/Profile-Icon-by-arus-1-580x386.jpg" alt="" aria-hidden="true" />
@@ -221,7 +211,7 @@ if (!isset($_SESSION['cargo']) || $_SESSION['cargo'] != 1) {
               <template x-if="isProfileMenuOpen">
                 <ul x-transition:leave="transition ease-in duration-150" x-transition:leave-start="opacity-100" x-transition:leave-end="opacity-0" @click.away="closeProfileMenu" @keydown.escape="closeProfileMenu" class="absolute right-0 w-56 p-2 mt-2 space-y-2 text-gray-600 bg-white border border-gray-100 rounded-md shadow-md dark:border-gray-700 dark:text-gray-300 dark:bg-gray-700" aria-label="submenu">
                   <li class="flex">
-                    <a class="inline-flex items-center w-full px-2 py-1 text-sm font-semibold transition-colors duration-150 rounded-md hover:bg-gray-100 hover:text-gray-800 dark:hover:bg-gray-800 dark:hover:text-gray-200" href="../profile/mostrar.php">
+                    <a class="inline-flex items-center w-full px-2 py-1 text-sm font-semibold transition-colors duration-150 rounded-md hover:bg-gray-100 hover:text-gray-800 dark:hover:bg-gray-800 dark:hover:text-gray-200" href="#">
                       <svg class="w-4 h-4 mr-3" aria-hidden="true" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
                         <path d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
                       </svg>
@@ -251,3 +241,228 @@ if (!isset($_SESSION['cargo']) || $_SESSION['cargo'] != 1) {
           </ul>
         </div>
       </header>
+
+      <main class="h-full overflow-y-auto">
+        <div class="container px-6 mx-auto grid">
+          <h2 class="my-6 text-2xl font-semibold text-gray-700 dark:text-gray-200">
+            Nuevos Pacientes
+          </h2>
+          <!-- CTA -->
+          <a class="flex items-center justify-between p-4 mb-8 text-sm font-semibold text-teal-100 bg-teal-600 rounded-lg shadow-md focus:outline-none focus:shadow-outline-teal" style="cursor: pointer;">
+            <div class="flex items-center">
+              <svg class="w-5 h-5 mr-2" fill="white" viewBox="0 0 20 20">
+                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+              </svg>
+              <span class="text-white">Bienvenido a nuestro sistema <?php echo ucfirst($_SESSION['nombre']); ?></span>
+            </div>
+
+          </a>
+          <div class="px-4 py-3 mb-8 bg-white rounded-lg shadow-md dark:bg-gray-800">
+            <form method="POST" autocomplete="off" enctype="multipart/form-data" role="form">
+
+              <label class="block text-sm">
+                <span class="text-gray-700 dark:text-gray-400">DUI</span>
+                <input maxlength="10" name="dnipa" onKeypress="if (event.keyCode < 45 || event.keyCode > 57) event.returnValue = false;" required="" type="text" class="block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-teal-400 focus:outline-none focus:shadow-outline-teal dark:text-gray-300 dark:focus:shadow-outline-gray form-input" />
+              </label>
+
+              <label class="block text-sm">
+                <span class="text-gray-700 dark:text-gray-400">Nombres</span>
+                <input name="nombrep" type="text" class="block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-teal-400 focus:outline-none focus:shadow-outline-teal dark:text-gray-300 dark:focus:shadow-outline-gray form-input" />
+              </label>
+
+              <label class="block text-sm">
+                <span class="text-gray-700 dark:text-gray-400">Apellidos</span>
+                <input name="apellidop" type="text" class="block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-teal-400 focus:outline-none focus:shadow-outline-teal dark:text-gray-300 dark:focus:shadow-outline-gray form-input" />
+              </label>
+
+
+              <div class="mt-4 text-sm">
+                <span class="text-gray-700 dark:text-gray-400">
+                  Seguro
+                </span>
+                <div class="mt-2">
+                  <label class="inline-flex items-center text-gray-600 dark:text-gray-400">
+                    <input name="seguro" type="radio" class="text-teal-600 form-radio focus:border-teal-400 focus:outline-none focus:shadow-outline-teal dark:focus:shadow-outline-gray" value="Si" />
+                    <span class="ml-2">Si</span>
+                  </label>
+                  <label class="inline-flex items-center ml-6 text-gray-600 dark:text-gray-400">
+                    <input name="seguro" type="radio" class="text-teal-600 form-radio focus:border-teal-400 focus:outline-none focus:shadow-outline-teal dark:focus:shadow-outline-gray" value="No" />
+                    <span class="ml-2">No</span>
+                  </label>
+                </div>
+              </div>
+
+              <label class="block text-sm">
+                <span class="text-gray-700 dark:text-gray-400">Teléfono</span>
+                <input name="tele" maxlength="9" onKeypress="if (event.keyCode < 45 || event.keyCode > 57) event.returnValue = false;" required="" type="text" class="block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-teal-400 focus:outline-none focus:shadow-outline-teal dark:text-gray-300 dark:focus:shadow-outline-gray form-input" />
+              </label>
+
+              <div class="mt-4 text-sm">
+                <span class="text-gray-700 dark:text-gray-400">
+                  Género
+                </span>
+                <div class="mt-2">
+                  <label class="inline-flex items-center text-gray-600 dark:text-gray-400">
+                    <input name="sexo" type="radio" class="text-teal-600 form-radio focus:border-teal-400 focus:outline-none focus:shadow-outline-teal dark:focus:shadow-outline-gray" value="Masculino" />
+                    <span class="ml-2">Masculino</span>
+                  </label>
+                  <label class="inline-flex items-center ml-6 text-gray-600 dark:text-gray-400">
+                    <input name="sexo" type="radio" class="text-teal-600 form-radio focus:border-teal-400 focus:outline-none focus:shadow-outline-teal dark:focus:shadow-outline-gray" value="Femenino" />
+                    <span class="ml-2">Femenino</span>
+                  </label>
+                </div>
+              </div>
+
+              <label class="block text-sm">
+                <span class="text-gray-700 dark:text-gray-400">Correo</span>
+                <input name="email" type="email" required="" class="block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-teal-400 focus:outline-none focus:shadow-outline-teal dark:text-gray-300 dark:focus:shadow-outline-gray form-input" />
+              </label>
+
+              <label class="block text-sm">
+                <span class="text-gray-700 dark:text-gray-400">Usuario</span>
+                <input name="usuario" type="text" required="" class="block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-teal-400 focus:outline-none focus:shadow-outline-teal dark:text-gray-300 dark:focus:shadow-outline-gray form-input" />
+              </label>
+
+              <label class="block text-sm">
+                <span class="text-gray-700 dark:text-gray-400">Contraseña</span>
+                <input name="clave" type="password" required="" class="block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-teal-400 focus:outline-none focus:shadow-outline-teal dark:text-gray-300 dark:focus:shadow-outline-gray form-input" />
+              </label>
+
+              <label class="block text-sm" style="display:none;">
+                <span class="text-gray-700 dark:text-gray-400">cargo</span>
+                <input name="cargo" type="text" value="2" required="" class="block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-teal-400 focus:outline-none focus:shadow-outline-teal dark:text-gray-300 dark:focus:shadow-outline-gray form-input" />
+              </label>
+
+
+              <label class="block text-sm" style="display:none;">
+                <span class="text-gray-700 dark:text-gray-400">Estado</span>
+                <input name="estado" type="text" value="1" class="block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-teal-400 focus:outline-none focus:shadow-outline-teal dark:text-gray-300 dark:focus:shadow-outline-gray form-input" />
+              </label>
+
+              <footer class="flex flex-col items-center justify-end px-3 py-2 -mx-3 -mb-6 space-y-4 sm:space-y-0 sm:space-x-6 sm:flex-row bg-gray-50 dark:bg-gray-800">
+                <button onclick="window.location.href='../../folder/patients.php'" class="w-full px-5 py-3 text-sm font-medium leading-5 text-white text-gray-700 transition-colors duration-150 border border-gray-300 rounded-lg dark:text-gray-400 sm:px-4 sm:py-2 sm:w-auto active:bg-transparent hover:border-gray-500 focus:border-gray-500 active:text-gray-500 focus:outline-none focus:shadow-outline-gray">
+                  Cancel
+                </button>
+                <button name="add" class="w-full px-5 py-3 text-sm font-medium leading-5 text-white transition-colors duration-150 bg-teal-600 border border-transparent rounded-lg sm:w-auto sm:px-4 sm:py-2 active:bg-teal-600 hover:bg-teal-700 focus:outline-none focus:shadow-outline-teal">
+                  Agregar
+                </button>
+              </footer>
+
+            </form>
+
+          </div>
+
+
+        </div>
+        <!--------------------------------COMIENZA NEW MODAL----------------------------->
+
+
+
+      </main>
+    </div>
+  </div>
+  <script src="../../assets/js/funciones/espe.js"></script>
+  <script src="../../assets/js/funciones/horario.js"></script>
+  <?php
+  if (isset($_POST["add"])) {
+    $servername = "localhost";
+    $username = "root";
+    $password = "";
+    $dbname = "proyecto_clinica";
+
+    // Creamos la conexión
+    $conn = new mysqli($servername, $username, $password, $dbname);
+
+    // Revisamos la conexión
+    if ($conn->connect_error) {
+      die("Connection failed: " . $conn->connect_error);
+    }
+    $dnipa = $_POST['dnipa'];
+    $nombrep = $_POST['nombrep'];
+    $apellidop = $_POST['apellidop'];
+    $seguro = $_POST['seguro'];
+
+    $tele = $_POST['tele'];
+    $sexo = $_POST['sexo'];
+
+    $email = $_POST['email'];
+    $usuario = $_POST['usuario'];
+    $clave = MD5($_POST['clave']);
+
+    $cargo = $_POST['cargo'];
+    $estado = $_POST['estado'];
+
+
+    // Realizamos la consulta para saber si coincide con uno de esos criterios
+    $sql = "select * from customers where dnipa='$dnipa' or email='$email' or tele='$tele'";
+    $result = mysqli_query($conn, $sql);
+  ?>
+
+
+    <?php
+    // Validamos si hay resultados
+    if (mysqli_num_rows($result) > 0) {
+      // Si es mayor a cero imprimimos que ya existe el usuario
+
+      if ($result) {
+    ?>
+
+        <script type="text/javascript">
+          Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'Ya existe el registro a agregar!'
+
+          })
+        </script>
+        <?php
+      }
+    } else {
+      // Si no hay resultados, ingresamos el registro a la base de datos
+      $sql2 = "INSERT INTO customers(dnipa,nombrep,apellidop,seguro,tele,sexo,email,usuario,clave,cargo,estado)VALUES ('$dnipa','$nombrep','$apellidop','$seguro','$tele','$sexo','$email','$usuario','$clave','$cargo','$estado')";
+
+
+      if (mysqli_query($conn, $sql2)) {
+
+        if ($sql2) {
+        ?>
+
+
+
+          <script type="text/javascript">
+            Swal.fire({
+              icon: 'info',
+              title: 'Registro',
+              text: 'Datos registrados correctamente'
+
+            }).then(function() {
+              window.location = "../../folder/patients.php";
+            });
+          </script>
+
+        <?php
+        } else {
+        ?>
+          <script type="text/javascript">
+            Swal.fire({
+              icon: 'error',
+              title: 'Oops...',
+              text: 'No se pudo guardar!'
+
+            })
+          </script>
+  <?php
+
+        }
+      } else {
+
+        echo "Error: " . $sql2 . "" . mysqli_error($conn);
+      }
+    }
+    // Cerramos la conexión
+    $conn->close();
+  }
+  ?>
+</body>
+
+</html>

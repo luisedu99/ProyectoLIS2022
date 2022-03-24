@@ -7,7 +7,7 @@ if(isset($_POST["agregar"])){
 $servername = "localhost";
 $username = "root";
 $password = "";
-$dbname = "proyecto_final";
+$dbname = "proyecto_clinica";
 
 // Creamos la conexión
 $conn = new mysqli($servername, $username, $password, $dbname);
@@ -113,7 +113,7 @@ if(isset($_POST["update"])){
 $servername = "localhost";
 $username = "root";
 $password = "";
-$dbname = "proyecto_final";
+$dbname = "proyecto_clinica";
 
 // Creamos la conexión
 $conn = new mysqli($servername, $username, $password, $dbname);
@@ -222,7 +222,7 @@ if(isset($_POST["add"])){
 $servername = "localhost";
 $username = "root";
 $password = "";
-$dbname = "proyecto_final";
+$dbname = "proyecto_clinica";
 
 // Creamos la conexión
 $conn = new mysqli($servername, $username, $password, $dbname);
@@ -318,7 +318,7 @@ if(isset($_POST["update1"])){
 $servername = "localhost";
 $username = "root";
 $password = "";
-$dbname = "proyecto_final";
+$dbname = "proyecto_clinica";
 
 // Creamos la conexión
 $conn = new mysqli($servername, $username, $password, $dbname);
@@ -422,7 +422,7 @@ if(isset($_POST["update2"])){
 $servername = "localhost";
 $username = "root";
 $password = "";
-$dbname = "proyecto_final";
+$dbname = "proyecto_clinica";
 
 // Creamos la conexión
 $conn = new mysqli($servername, $username, $password, $dbname);
@@ -534,7 +534,7 @@ if(isset($_POST["add2"])){
 $servername = "localhost";
 $username = "root";
 $password = "";
-$dbname = "proyecto_final";
+$dbname = "proyecto_clinica";
 
 // Creamos la conexión
 $conn = new mysqli($servername, $username, $password, $dbname);
@@ -632,7 +632,7 @@ if(isset($_POST["update4"])){
 $servername = "localhost";
 $username = "root";
 $password = "";
-$dbname = "proyecto_final";
+$dbname = "proyecto_clinica";
 
 // Creamos la conexión
 $conn = new mysqli($servername, $username, $password, $dbname);
@@ -735,7 +735,7 @@ if(isset($_POST["add3"])){
 $servername = "localhost";
 $username = "root";
 $password = "";
-$dbname = "proyecto_final";
+$dbname = "proyecto_clinica";
 
 // Creamos la conexión
 $conn = new mysqli($servername, $username, $password, $dbname);
@@ -835,7 +835,7 @@ if(isset($_POST["update5"])){
 $servername = "localhost";
 $username = "root";
 $password = "";
-$dbname = "proyecto_final";
+$dbname = "proyecto_clinica";
 
 // Creamos la conexión
 $conn = new mysqli($servername, $username, $password, $dbname);
@@ -939,7 +939,7 @@ if(isset($_POST["update9"])){
 $servername = "localhost";
 $username = "root";
 $password = "";
-$dbname = "proyecto_final";
+$dbname = "proyecto_clinica";
 
 // Creamos la conexión
 $conn = new mysqli($servername, $username, $password, $dbname);
@@ -1042,7 +1042,7 @@ if(isset($_POST["update11"])){
 $servername = "localhost";
 $username = "root";
 $password = "";
-$dbname = "proyecto_final";
+$dbname = "proyecto_clinica";
 
 // Creamos la conexión
 $conn = new mysqli($servername, $username, $password, $dbname);
@@ -1146,7 +1146,7 @@ if(isset($_POST["update6"])){
 $servername = "localhost";
 $username = "root";
 $password = "";
-$dbname = "proyecto_final";
+$dbname = "proyecto_clinica";
 
 // Creamos la conexión
 $conn = new mysqli($servername, $username, $password, $dbname);

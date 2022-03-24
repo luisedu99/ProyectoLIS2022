@@ -1,6 +1,6 @@
 <?php
 $hostname_conex = "localhost";
-$database_conex = "proyecto_final";
+$database_conex = "proyecto_clinica";
 $username_conex = "root";
 $password_conex = "";
 // creación de la conexión a la base de datos con mysql_connect()
