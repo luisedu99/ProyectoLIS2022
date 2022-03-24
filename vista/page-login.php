@@ -1,3 +1,58 @@
+<?php
+require '../assets/db/config.php';
+
+if (isset($_POST['login'])) {
+    $errMsg = '';
+
+    // Get data from FORM
+    $usuario = $_POST['usuario'];
+
+    $clave = MD5($_POST['clave']);
+
+    if ($usuario == '')
+        $errMsg = 'Digite su usuario';
+    if ($clave == '')
+        $errMsg = 'Digite su contraseña';
+
+    if ($errMsg == '') {
+        try {
+            $stmt = $connect->prepare('SELECT id, nombre, usuario, email,clave, cargo FROM usuarios WHERE usuario = :usuario UNION SELECT codpaci, nombrep, usuario, email, clave,cargo FROM customers  WHERE usuario = :usuario');
+
+            $stmt->execute(array(
+                ':usuario' => $usuario
+
+
+            ));
+            $data = $stmt->fetch(PDO::FETCH_ASSOC);
+
+            if ($data == false) {
+                $errMsg = "Usuario $usuario no encontrado.";
+            } else {
+                if ($clave == $data['clave']) {
+
+                    $_SESSION['id'] = $data['id'];
+                    $_SESSION['nombre'] = $data['nombre'];
+                    $_SESSION['usuario'] = $data['usuario'];
+                    $_SESSION['email'] = $data['email'];
+                    $_SESSION['clave'] = $data['clave'];
+                    $_SESSION['cargo'] = $data['cargo'];
+
+
+                    if ($_SESSION['cargo'] == 1) {
+                        header('Location: admin/pages-admin.php');
+                    } else if ($_SESSION['cargo'] == 2) {
+                        header('Location: user-patients/patiens-mostrar.php');
+                    }
+                    exit;
+                } else
+                    $errMsg = 'Contraseña incorrecta.';
+            }
+        } catch (PDOException $e) {
+            $errMsg = $e->getMessage();
+        }
+    }
+}
+?>
 <!DOCTYPE html>
 <html :class="{ 'theme-dark': dark }" x-data="data()" lang="en">
 
@@ -19,7 +74,7 @@
                     <div class="img">
                         <img src="../assets/img/logo.png" alt="logo">
                     </div>
-                   <!-- <img aria-hidden="true" class="object-cover w-full h-full dark:hidden" src="../assets/img/forgot-password-office.jpeg" alt="Office" />
+                    <!-- <img aria-hidden="true" class="object-cover w-full h-full dark:hidden" src="../assets/img/forgot-password-office.jpeg" alt="Office" />
                     <img aria-hidden="true" class="hidden object-cover w-full h-full dark:block" src="../assets/img/logo.png" alt="Office" /> -->
                 </div>
                 <div class="flex items-center justify-center p-6 sm:p-12 md:w-1/2">
