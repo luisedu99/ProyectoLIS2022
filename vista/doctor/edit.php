@@ -13,7 +13,7 @@ if (!isset($_SESSION['cargo']) || $_SESSION['cargo'] != 1) {
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Acceso - Clinical v1</title>
+  <title>Acceso - Clinical Journal</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="../../assets/css/tailwind.output.css" />
   <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
@@ -57,7 +57,7 @@ if (!isset($_SESSION['cargo']) || $_SESSION['cargo'] != 1) {
           </li>
 
           <li class="relative px-6 py-3">
-            <span class="absolute inset-y-0 left-0 w-1 bg-teal-600 rounded-tr-lg rounded-br-lg" aria-hidden="true"></span>
+
             <a class="inline-flex items-center w-full text-sm font-semibold transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200" href="../../folder/patients.php">
               <svg class="w-5 h-5" aria-hidden="true" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
 
@@ -68,6 +68,7 @@ if (!isset($_SESSION['cargo']) || $_SESSION['cargo'] != 1) {
           </li>
 
           <li class="relative px-6 py-3">
+            <span class="absolute inset-y-0 left-0 w-1 bg-teal-600 rounded-tr-lg rounded-br-lg" aria-hidden="true"></span>
             <a class="inline-flex items-center w-full text-sm font-semibold transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200" href="../../folder/doctor.php">
               <svg class="w-5 h-5" aria-hidden="true" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"></path>
@@ -87,6 +88,7 @@ if (!isset($_SESSION['cargo']) || $_SESSION['cargo'] != 1) {
 
 
           <li class="relative px-6 py-3">
+
             <a class="inline-flex items-center w-full text-sm font-semibold transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200" href="../../folder/specialty.php">
               <svg class="w-5 h-5" aria-hidden="true" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z" />
@@ -135,7 +137,7 @@ if (!isset($_SESSION['cargo']) || $_SESSION['cargo'] != 1) {
             </a>
           </li>
           <li class="relative px-6 py-3">
-            <span class="absolute inset-y-0 left-0 w-1 bg-teal-600 rounded-tr-lg rounded-br-lg" aria-hidden="true"></span>
+
             <a class="inline-flex items-center w-full text-sm font-semibold transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200" href="../../folder/patients.php">
               <svg class="w-5 h-5" aria-hidden="true" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"></path>
@@ -144,6 +146,7 @@ if (!isset($_SESSION['cargo']) || $_SESSION['cargo'] != 1) {
             </a>
           </li>
           <li class="relative px-6 py-3">
+            <span class="absolute inset-y-0 left-0 w-1 bg-teal-600 rounded-tr-lg rounded-br-lg" aria-hidden="true"></span>
             <a class="inline-flex items-center w-full text-sm font-semibold transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200" href="../../folder/doctor.php">
               <svg class="w-5 h-5" aria-hidden="true" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"></path>
@@ -192,10 +195,12 @@ if (!isset($_SESSION['cargo']) || $_SESSION['cargo'] != 1) {
             <div class="relative w-full max-w-xl mr-6 focus-within:text-teal-500">
               <div class="absolute inset-y-0 flex items-center pl-2">
                 
-              </div>              
+              </div>
+              <
             </div>
           </div>
-          <ul class="flex items-center flex-shrink-0 space-x-6">
+          <ul class="flex items-center flex-shrink-0 space-x-6">          
+            
             <!-- Profile menu -->
             <li class="relative">
               <button class="align-middle rounded-full focus:shadow-outline-teal focus:outline-none" @click="toggleProfileMenu" @keydown.escape="closeProfileMenu" aria-label="Account" aria-haspopup="true">
@@ -238,30 +243,30 @@ if (!isset($_SESSION['cargo']) || $_SESSION['cargo'] != 1) {
       <main class="h-full overflow-y-auto">
         <div class="container px-6 mx-auto grid">
           <h2 class="my-6 text-2xl font-semibold text-gray-700 dark:text-gray-200">
-            Pacientes
+            Doctor
           </h2>
           <!-- CTA -->
           <a class="flex items-center justify-between p-4 mb-8 text-sm font-semibold text-teal-100 bg-teal-600 rounded-lg shadow-md focus:outline-none focus:shadow-outline-teal" style="cursor: pointer;">
             <div class="flex items-center">
-              <svg class="w-5 h-5 mr-2" fill="white" viewBox="0 0 20 20">
+              <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
                 <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
               </svg>
-              <span class="text-white">Bienvenido a nuestro sistema <?php echo ucfirst($_SESSION['nombre']); ?></span>
+              <span>Bienvenido a nuestro sistema <?php echo ucfirst($_SESSION['nombre']); ?></span>
             </div>
 
           </a>
           <!--------------------------------COMIENZA FORM----------------------------->
           <h4 class="mb-4 text-lg font-semibold text-gray-600 dark:text-gray-300">
-            Cambiar contraseña
+            Editar pacientes
           </h4>
           <?php
           function connect()
           {
-            return new mysqli("localhost", "root", "", "proyecto_clinica");
+            return new mysqli("localhost", "root", "", "proyecto_final");
           }
           $con = connect();
           $id = $_GET['id'];
-          $sql = "SELECT * FROM customers  WHERE codpaci= '$id'";
+          $sql = "SELECT doctor.coddoc, doctor.dnidoc, doctor.nomdoc, doctor.apedoc, specialty.codespe, specialty.nombrees,doctor.sexo, doctor.telefo, doctor.fechanaci, doctor.correo, doctor.naciona, doctor.estado, doctor.fecha_create FROM doctor INNER JOIN specialty ON doctor.codespe = specialty.codespe  WHERE coddoc= '$id'";
           $query  = $con->query($sql);
           $data =  array();
           if ($query) {
@@ -274,19 +279,115 @@ if (!isset($_SESSION['cargo']) || $_SESSION['cargo'] != 1) {
           <?php if (count($data) > 0) : ?>
             <?php foreach ($data as $d) : ?>
               <div class="px-4 py-3 mb-8 bg-white rounded-lg shadow-md dark:bg-gray-800">
-                <form method="POST" autocomplete="off" action="../../folder/patients.php?id=<?php echo $d->codpaci; ?>" role="form">
-
+                <form method="POST" autocomplete="off" action="../../folder/doctor.php?id=<?php echo $d->coddoc; ?>" role="form">
 
                   <label class="block text-sm">
-                    <span class="text-gray-700 dark:text-gray-400">Nueva contraseña</span>
-                    <input name="clave" type="password" class="block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-teal-400 focus:outline-none focus:shadow-outline-teal dark:text-gray-300 dark:focus:shadow-outline-gray form-input" placeholder="*******" />
+                    <span class="text-gray-700 dark:text-gray-400">DNI</span>
+                    <input name="dnidoc" onKeypress="if (event.keyCode < 45 || event.keyCode > 57) event.returnValue = false;" maxlength="8" value="<?php echo $d->dnidoc; ?>" type="text" class="block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-teal-400 focus:outline-none focus:shadow-outline-teal dark:text-gray-300 dark:focus:shadow-outline-gray form-input" placeholder="Jane Doe" />
                   </label>
 
-                  <footer class="flex flex-col items-center justify-end px-6 py-3 -mx-6 -mb-4 space-y-4 sm:space-y-0 sm:space-x-6 sm:flex-row bg-gray-50 dark:bg-gray-800">
+                  <label class="block text-sm">
+                    <span class="text-gray-700 dark:text-gray-400">Nombres</span>
+                    <input name="nomdoc" value="<?php echo $d->nomdoc; ?>" type="text" class="block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-teal-400 focus:outline-none focus:shadow-outline-teal dark:text-gray-300 dark:focus:shadow-outline-gray form-input" placeholder="Cardiologia" />
+                  </label>
+
+                  <label class="block text-sm">
+                    <span class="text-gray-700 dark:text-gray-400">Apellidos</span>
+                    <input name="apedoc" value="<?php echo $d->apedoc; ?>" type="text" class="block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-teal-400 focus:outline-none focus:shadow-outline-teal dark:text-gray-300 dark:focus:shadow-outline-gray form-input" placeholder="Cardiologia" />
+                  </label>
+
+                  <label class="block mt-4 text-sm">
+                    <span class="text-gray-700 dark:text-gray-400">
+                      Especialidad
+                    </span>
+                    <select name="codespe" class="block w-full mt-1 text-sm dark:text-gray-300 dark:border-gray-600 dark:bg-gray-700 form-select focus:border-teal-400 focus:outline-none focus:shadow-outline-teal dark:focus:shadow-outline-gray">
+                      <option value="<?php echo $d->codespe; ?>"><?php echo $d->nombrees; ?></option>
+
+                      <?php
+                      $dbhost = 'localhost';
+                      $dbname = 'proyecto_final';
+                      $dbuser = 'root';
+                      $dbpass = '';
+
+                      try {
+
+                        $dbcon = new PDO("mysql:host={$dbhost};dbname={$dbname}", $dbuser, $dbpass);
+                        $dbcon->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+                      } catch (PDOException $ex) {
+
+                        die($ex->getMessage());
+                      }
+                      $stmt = $dbcon->prepare('SELECT * FROM specialty');
+                      $stmt->execute();
+
+                      while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
+                        extract($row);
+                      ?>
+                        <option value="<?php echo $codespe; ?>"><?php echo $nombrees; ?></option>
+                      <?php
+                      }
+                      ?>
+                      ?>
+                    </select>
+                  </label>
+
+
+
+                  <div class="mt-4 text-sm">
+                    <span class="text-gray-700 dark:text-gray-400">
+                      Género
+                    </span>
+                    <div class="mt-2">
+                      <label class="inline-flex items-center text-gray-600 dark:text-gray-400">
+
+                        <input class="text-teal-600 form-radio focus:border-teal-400 focus:outline-none focus:shadow-outline-teal dark:focus:shadow-outline-gray" name="sexo" type="radio" id="sexo" value="<?php echo $d->sexo; ?>" <?php echo ($d->sexo == 'Masculino') ?  "checked" : "";  ?> />
+
+                        <span class="ml-2">Masculino</span>
+                      </label>
+
+                      <label class="inline-flex items-center ml-6 text-gray-600 dark:text-gray-400">
+
+                        <input class="text-teal-600 form-radio focus:border-teal-400 focus:outline-none focus:shadow-outline-teal dark:focus:shadow-outline-gray" name="sexo" type="radio" id="sexo" value="<?php echo $d->sexo; ?>" <?php echo ($d->sexo == 'Femenino') ?  "checked" : "";  ?> />
+
+                        <span class="ml-2">Femenino</span>
+                      </label>
+                    </div>
+                  </div>
+
+                  <label class="block text-sm">
+                    <span class="text-gray-700 dark:text-gray-400">Teléfono</span>
+                    <input name="telefo" maxlength="9" onKeypress="if (event.keyCode < 45 || event.keyCode > 57) event.returnValue = false;" value="<?php echo $d->telefo; ?>" type="text" class="block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-teal-400 focus:outline-none focus:shadow-outline-teal dark:text-gray-300 dark:focus:shadow-outline-gray form-input" placeholder="Jane Doe" />
+                  </label>
+
+                  <label class="block text-sm">
+                    <span class="text-gray-700 dark:text-gray-400">Nacimiento</span>
+                    <input type="date" name="fechanaci" value="<?php echo $d->fechanaci; ?>" class="block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-teal-400 focus:outline-none focus:shadow-outline-teal dark:text-gray-300 dark:focus:shadow-outline-gray form-input" />
+                  </label>
+
+                  <label class="block text-sm">
+                    <span class="text-gray-700 dark:text-gray-400">Correo</span>
+                    <input name="correo" value="<?php echo $d->correo; ?>" type="email" class="block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-teal-400 focus:outline-none focus:shadow-outline-teal dark:text-gray-300 dark:focus:shadow-outline-gray form-input" placeholder="Jane Doe" />
+                  </label>
+
+                  <label class="block mt-4 text-sm">
+                    <span class="text-gray-700 dark:text-gray-400">
+                      Nacionalidad
+                    </span>
+                    <select name="naciona" class="block w-full mt-1 text-sm dark:text-gray-300 dark:border-gray-600 dark:bg-gray-700 form-select focus:border-teal-400 focus:outline-none focus:shadow-outline-teal dark:focus:shadow-outline-gray">
+                      <option value="<?php echo $d->naciona; ?>"><?php echo $d->naciona; ?></option>
+                      <option value="Peruana">Peruana</option>
+                      <option value="Venezonlana">Venezonlana</option>
+
+
+                    </select>
+                  </label>
+
+
+                  <footer class="flex flex-col items-center justify-end px-3 py-2 -mx-3 -mb-6 space-y-4 sm:space-y-0 sm:space-x-6 sm:flex-row bg-gray-50 dark:bg-gray-800">
                     <button @click="closeModal" class="w-full px-5 py-3 text-sm font-medium leading-5 text-white text-gray-700 transition-colors duration-150 border border-gray-300 rounded-lg dark:text-gray-400 sm:px-4 sm:py-2 sm:w-auto active:bg-transparent hover:border-gray-500 focus:border-gray-500 active:text-gray-500 focus:outline-none focus:shadow-outline-gray">
                       Cancel
                     </button>
-                    <button name="update11" class="w-full px-5 py-3 text-sm font-medium leading-5 text-white transition-colors duration-150 bg-teal-600 border border-transparent rounded-lg sm:w-auto sm:px-4 sm:py-2 active:bg-teal-600 hover:bg-teal-700 focus:outline-none focus:shadow-outline-teal">
+                    <button name="update2" class="w-full px-5 py-3 text-sm font-medium leading-5 text-white transition-colors duration-150 bg-teal-600 border border-transparent rounded-lg sm:w-auto sm:px-4 sm:py-2 active:bg-teal-600 hover:bg-teal-700 focus:outline-none focus:shadow-outline-teal">
                       Actualizar
                     </button>
                   </footer>

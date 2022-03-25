@@ -97,7 +97,7 @@ CREATE TABLE `doctor` (
 
 INSERT INTO `doctor` (`coddoc`, `dnidoc`, `nomdoc`, `apedoc`, `codespe`, `sexo`, `telefo`, `fechanaci`, `correo`, `naciona`, `estado`, `fecha_create`) VALUES
 (1, '01234567-8', 'Luis', 'Alonso ', 1, 'Masculino', '7485-9845', '1982-11-16', 'luistrelles@gmail.com', 'Salvadoreño/a', '1', '2022-03-14 14:38:25'),
-(2, '98765432-1', 'Dayana', 'Flores', 3, 'Femenino', '7956-2432', '1989-11-14', 'flavviapineda@gmail.com', 'Salvadoreño/a', '1', '2022-03-14 21:41:31'),
+(2, '98765432-1', 'Dolores', 'Flores', 3, 'Femenino', '7956-2432', '1989-11-14', 'flavviapineda@gmail.com', 'Salvadoreño/a', '1', '2022-03-14 21:41:31'),
 (3, '23345689-2', 'Ivan ', 'Solis', 5, 'Masculino', '6245-3215', '1997-11-11', 'ivansolis@gmail.com', 'Otro', '1', '2022-03-14 00:46:06');
 
 -- --------------------------------------------------------
