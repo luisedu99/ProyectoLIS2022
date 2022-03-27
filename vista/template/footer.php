@@ -179,7 +179,7 @@ if (mysqli_query($conn, $sql2)) {
              
 Swal.fire({
   icon: 'success',
-  title: 'Update',
+  title: 'Actualizado',
   text: 'Actualizado correctamente',
   
 }).then(function() {
@@ -378,7 +378,7 @@ if (mysqli_query($conn, $sql2)) {
              
 Swal.fire({
   icon: 'success',
-  title: 'Update',
+  title: 'Actualizado',
   text: 'Actualizado correctamente',
   
 }).then(function() {
@@ -492,7 +492,7 @@ if (mysqli_query($conn, $sql2)) {
              
 Swal.fire({
   icon: 'success',
-  title: 'Update',
+  title: 'Modificado',
   text: 'Actualizado correctamente',
   
 }).then(function() {
@@ -692,7 +692,7 @@ if (mysqli_query($conn, $sql2)) {
              
 Swal.fire({
   icon: 'success',
-  title: 'Update',
+  title: 'Modificado',
   text: 'Actualizado correctamente',
   
 }).then(function() {
@@ -897,7 +897,7 @@ if (mysqli_query($conn, $sql2)) {
              
 Swal.fire({
   icon: 'success',
-  title: 'Update',
+  title: 'Modificado',
   text: 'Actualizado correctamente',
   
 }).then(function() {
@@ -999,7 +999,7 @@ if (mysqli_query($conn, $sql2)) {
              
 Swal.fire({
   icon: 'success',
-  title: 'Update',
+  title: 'Modificado',
   text: 'Actualizado correctamente',
   
 }).then(function() {
@@ -1102,7 +1102,7 @@ if (mysqli_query($conn, $sql2)) {
              
 Swal.fire({
   icon: 'success',
-  title: 'Update',
+  title: 'Modificado',
   text: 'Actualizado correctamente',
   
 }).then(function() {
@@ -1204,7 +1204,7 @@ if (mysqli_query($conn, $sql2)) {
              
 Swal.fire({
   icon: 'success',
-  title: 'Update',
+  title: 'Modificado',
   text: 'Actualizado correctamente',
   
 }).then(function() {

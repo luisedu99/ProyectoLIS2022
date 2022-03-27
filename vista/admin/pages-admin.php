@@ -26,7 +26,7 @@
         </div>
         <div>
           <p class="mb-2 text-sm font-medium text-gray-600 dark:text-gray-400">
-            Total patients
+            Pacientes totales
           </p>
           <?php
           $db_host = "localhost";
@@ -57,7 +57,7 @@
         </div>
         <div>
           <p class="mb-2 text-sm font-medium text-gray-600 dark:text-gray-400">
-            Total doctor
+            Doctores totales
           </p>
           <?php
           $db_host = "localhost";
@@ -88,7 +88,7 @@
         </div>
         <div>
           <p class="mb-2 text-sm font-medium text-gray-600 dark:text-gray-400">
-            Total specialties
+            Especialidades totales
           </p>
           <?php
           $db_host = "localhost";
@@ -120,7 +120,7 @@
         </div>
         <div>
           <p class="mb-2 text-sm font-medium text-gray-600 dark:text-gray-400">
-            Total quotes
+            Horarios totales
           </p>
           <?php
           $db_host = "localhost";
