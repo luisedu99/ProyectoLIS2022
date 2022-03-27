@@ -16,11 +16,11 @@ Clinical Journal 🏥
 
 # Enlaces 🔗
 
-*Tablero de Trello:*
+*Tablero de Trello:* https://trello.com/b/8r26XNdi/proyectolis
 
-*Mockups:*
+*Mockups:* https://www.figma.com/team_invite/redeem/Yp1kgaD4ZoDb3cLYMRAtg4
 
-*Video:*
+*Video:* https://drive.google.com/drive/folders/1db0G7sXJqfjCBVdT6DXNu-rGn557SECk?usp=sharing
 
 # Licencia 📃
 
