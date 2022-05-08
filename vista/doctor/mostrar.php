@@ -257,11 +257,10 @@ if (!isset($_SESSION['cargo']) || $_SESSION['cargo'] != 1) {
           <div>
             <button onclick="window.location.href='../vista/doctor/new.php'" class="px-3 py-1 text-sm font-medium leading-5 text-white transition-colors duration-150 bg-teal-600 border border-transparent rounded-md active:bg-teal-600 hover:bg-teal-700 focus:outline-none focus:shadow-outline-teal">
               Nuevo Doctor
-            </button>
-            <!--
+            </button>            
             <button onclick="window.location.href='../vista/doctor/reporte.php'" class="px-3 py-1 text-sm font-medium leading-5 text-white transition-colors duration-150 bg-teal-600 border border-transparent rounded-md active:bg-teal-600 hover:bg-teal-700 focus:outline-none focus:shadow-outline-teal">
               PDF
-            </button> -->
+            </button>
           </div>
 
 
