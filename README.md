@@ -22,6 +22,10 @@ Clinical Journal 🏥
 
 *Video:* https://drive.google.com/drive/folders/1db0G7sXJqfjCBVdT6DXNu-rGn557SECk?usp=sharing
 
+*Link Manual de usuario:* https://drive.google.com/drive/folders/1ccwnvkQaHKz7naKoc6cp-CXIZWjv5Y9H?usp=sharing
+
+*Link Manual técnico:* https://drive.google.com/drive/folders/1MsliSxKyJoZjEEWZEimzekMP2pwrt7-i?usp=sharing
+
 # Licencia 📃
 
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Licencia de Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Clinical Journal</span> by <span xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName">Luis Eduardo Cañas Santos, Ronald Alexander Alberto Torres, Nelson Ernesto Muñoz Barahona, Daniel Alejandro Orellana Velazques & Christian Rodrigo Ardon Rivas</span> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Reconocimiento 4.0 Internacional License</a>.<br />Creado a partir de la obra en <a xmlns:dct="http://purl.org/dc/terms/" href="https://github.com/luisedu99/ProyectoLIS2022" rel="dct:source">https://github.com/luisedu99/ProyectoLIS2022</a>.
