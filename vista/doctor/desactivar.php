@@ -1,7 +1,7 @@
 <?php
 session_start();
 Class Connection{
-	private $server= "mysql:host=localhost;dbname=proyecto_final";
+	private $server= "mysql:host=localhost;dbname=proyecto_clinica";
 	private $username ="root";
 	private $password ="";
 	private $options = array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,);

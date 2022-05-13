@@ -219,13 +219,13 @@ $id = $_SESSION['id'];
                           <?php
 
                           if ($d->estado == 1) { ?>
-                            <form method="get" action="javascript:activo('<?php echo $compra->id_compra; ?>')">
+                            <form method="get" action="javascript:activo('<?php echo $d->estado; ?>')">
                               <span class="px-2 py-1 font-semibold leading-tight text-green-700 bg-green-100 rounded-full dark:bg-green-700 dark:text-green-100">Aceptada
                               </span>
                             </form>
                           <?php  } else { ?>
 
-                            <form method="get" action="javascript:inactivo('<?php echo $compra->id_compra; ?>')">
+                            <form method="get" action="javascript:inactivo('<?php echo $d->estado; ?>')">
                               <span class="px-2 py-1 font-semibold leading-tight text-orange-700 bg-orange-100 rounded-full dark:text-white dark:bg-orange-600">
                                 No aceptada
                               </span>

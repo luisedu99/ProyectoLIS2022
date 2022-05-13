@@ -9,7 +9,7 @@ if (!isset($_SESSION['cargo']) || $_SESSION['cargo'] != 1) {
 <!-- ---------------------------COMIENZA-------------------------------------->
 <?php
 try {
-  $bdd = new PDO('mysql:host=localhost;dbname=proyecto_final;charset=utf8', 'root', '');
+  $bdd = new PDO('mysql:host=localhost;dbname=proyecto_clinica;charset=utf8', 'root', '');
 } catch (Exception $e) {
   die('Error : ' . $e->getMessage());
 }

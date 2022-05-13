@@ -263,7 +263,7 @@ if (!isset($_SESSION['cargo']) || $_SESSION['cargo'] != 1) {
           <?php
           function connect()
           {
-            return new mysqli("localhost", "root", "", "proyecto_final");
+            return new mysqli("localhost", "root", "", "proyecto_clinica");
           }
           $con = connect();
           $id = $_GET['id'];

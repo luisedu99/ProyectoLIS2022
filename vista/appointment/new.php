@@ -197,11 +197,12 @@ if (!isset($_SESSION['cargo']) || $_SESSION['cargo'] != 1) {
           <!-- Search input -->
           <div class="flex justify-center flex-1 lg:mr-32">
             <div class="relative w-full max-w-xl mr-6 focus-within:text-teal-500">
-              <div class="absolute inset-y-0 flex items-center pl-2">                
+              <div class="absolute inset-y-0 flex items-center pl-2">
+                
               </div>              
             </div>
           </div>
-          <ul class="flex items-center flex-shrink-0 space-x-6">
+          <ul class="flex items-center flex-shrink-0 space-x-6">           
             <!-- Profile menu -->
             <li class="relative">
               <button class="align-middle rounded-full focus:shadow-outline-teal focus:outline-none" @click="toggleProfileMenu" @keydown.escape="closeProfileMenu" aria-label="Account" aria-haspopup="true">
@@ -261,7 +262,7 @@ if (!isset($_SESSION['cargo']) || $_SESSION['cargo'] != 1) {
 
               <label class="block text-sm">
                 <span class="text-gray-700 dark:text-gray-400">Asunto</span>
-                <textarea name="asunto" class="block w-full mt-1 text-sm dark:text-gray-300 dark:border-gray-600 dark:bg-gray-700 form-textarea focus:border-teal-400 focus:outline-none focus:shadow-outline-teal dark:focus:shadow-outline-gray" rows="3" placeholder="Ingrese el asunto de cita"></textarea>
+                <textarea name="asunto" class="block w-full mt-1 text-sm dark:text-gray-300 dark:border-gray-600 dark:bg-gray-700 form-textarea focus:border-teal-400 focus:outline-none focus:shadow-outline-teal dark:focus:shadow-outline-gray" rows="3" placeholder="Enter some long form content."></textarea>
               </label>
 
               <label class="block mt-4 text-sm">

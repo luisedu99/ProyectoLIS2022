@@ -20,6 +20,7 @@ if (!isset($_SESSION['cargo']) || $_SESSION['cargo'] != 1) {
   <script src="../../assets/js/init-alpine.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.css" />
 
+
   <script src="../..\assets\js\jquery.min.js"></script>
 
   <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
@@ -35,7 +36,7 @@ if (!isset($_SESSION['cargo']) || $_SESSION['cargo'] != 1) {
         </a>
         <ul class="mt-6">
           <li class="relative px-6 py-3">
-
+            <span class="absolute inset-y-0 left-0 w-1 bg-teal-600 rounded-tr-lg rounded-br-lg" aria-hidden="true"></span>
             <a class="inline-flex items-center w-full text-sm font-semibold text-gray-800 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200 dark:text-gray-100" href="../admin/pages-admin.php">
               <svg class="w-5 h-5" aria-hidden="true" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
                 <path d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path>
@@ -47,6 +48,7 @@ if (!isset($_SESSION['cargo']) || $_SESSION['cargo'] != 1) {
 
         <ul>
           <li class="relative px-6 py-3">
+
             <a class="inline-flex items-center w-full text-sm font-semibold transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200" href="../../folder/appointment.php">
               <svg class="w-5 h-5" aria-hidden="true" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
                 <path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"></path>
@@ -68,6 +70,7 @@ if (!isset($_SESSION['cargo']) || $_SESSION['cargo'] != 1) {
           </li>
 
           <li class="relative px-6 py-3">
+
             <a class="inline-flex items-center w-full text-sm font-semibold transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200" href="../../folder/doctor.php">
               <svg class="w-5 h-5" aria-hidden="true" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"></path>
@@ -77,7 +80,6 @@ if (!isset($_SESSION['cargo']) || $_SESSION['cargo'] != 1) {
           </li>
 
           <li class="relative px-6 py-3">
-            <span class="absolute inset-y-0 left-0 w-1 bg-teal-600 rounded-tr-lg rounded-br-lg" aria-hidden="true"></span>
             <a class="inline-flex items-center w-full text-sm font-semibold transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200" href="../../folder/usuarios.php">
               <svg class="w-5 h-5" aria-hidden="true" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"></path>
@@ -104,6 +106,7 @@ if (!isset($_SESSION['cargo']) || $_SESSION['cargo'] != 1) {
               <span class="ml-4">Horarios</span>
             </a>
           </li>
+
         </ul>
 
       </div>
@@ -118,7 +121,7 @@ if (!isset($_SESSION['cargo']) || $_SESSION['cargo'] != 1) {
         </a>
         <ul class="mt-6">
           <li class="relative px-6 py-3">
-
+            <span class="absolute inset-y-0 left-0 w-1 bg-teal-600 rounded-tr-lg rounded-br-lg" aria-hidden="true"></span>
             <a class="inline-flex items-center w-full text-sm font-semibold text-gray-800 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200 dark:text-gray-100" href="../admin/pages-admin.php">
               <svg class="w-5 h-5" aria-hidden="true" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
                 <path d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path>
@@ -129,6 +132,7 @@ if (!isset($_SESSION['cargo']) || $_SESSION['cargo'] != 1) {
         </ul>
         <ul>
           <li class="relative px-6 py-3">
+
             <a class="inline-flex items-center w-full text-sm font-semibold transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200" href="../../folder/appointment.php">
               <svg class="w-5 h-5" aria-hidden="true" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
                 <path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"></path>
@@ -146,6 +150,7 @@ if (!isset($_SESSION['cargo']) || $_SESSION['cargo'] != 1) {
             </a>
           </li>
           <li class="relative px-6 py-3">
+
             <a class="inline-flex items-center w-full text-sm font-semibold transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200" href="../../folder/doctor.php">
               <svg class="w-5 h-5" aria-hidden="true" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"></path>
@@ -154,7 +159,6 @@ if (!isset($_SESSION['cargo']) || $_SESSION['cargo'] != 1) {
             </a>
           </li>
           <li class="relative px-6 py-3">
-            <span class="absolute inset-y-0 left-0 w-1 bg-teal-600 rounded-tr-lg rounded-br-lg" aria-hidden="true"></span>
             <a class="inline-flex items-center w-full text-sm font-semibold transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200" href="../../folder/usuarios.php">
               <svg class="w-5 h-5" aria-hidden="true" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"></path>
@@ -163,7 +167,6 @@ if (!isset($_SESSION['cargo']) || $_SESSION['cargo'] != 1) {
             </a>
           </li>
           <li class="relative px-6 py-3">
-
             <a class="inline-flex items-center w-full text-sm font-semibold transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200" href="../../folder/specialty.php">
               <svg class="w-5 h-5" aria-hidden="true" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z" />
@@ -199,8 +202,7 @@ if (!isset($_SESSION['cargo']) || $_SESSION['cargo'] != 1) {
               </div>              
             </div>
           </div>
-          <ul class="flex items-center flex-shrink-0 space-x-6">          
-            
+          <ul class="flex items-center flex-shrink-0 space-x-6">            
             <!-- Profile menu -->
             <li class="relative">
               <button class="align-middle rounded-full focus:shadow-outline-teal focus:outline-none" @click="toggleProfileMenu" @keydown.escape="closeProfileMenu" aria-label="Account" aria-haspopup="true">
@@ -209,13 +211,14 @@ if (!isset($_SESSION['cargo']) || $_SESSION['cargo'] != 1) {
               <template x-if="isProfileMenuOpen">
                 <ul x-transition:leave="transition ease-in duration-150" x-transition:leave-start="opacity-100" x-transition:leave-end="opacity-0" @click.away="closeProfileMenu" @keydown.escape="closeProfileMenu" class="absolute right-0 w-56 p-2 mt-2 space-y-2 text-gray-600 bg-white border border-gray-100 rounded-md shadow-md dark:border-gray-700 dark:text-gray-300 dark:bg-gray-700" aria-label="submenu">
                   <li class="flex">
-                    <a class="inline-flex items-center w-full px-2 py-1 text-sm font-semibold transition-colors duration-150 rounded-md hover:bg-gray-100 hover:text-gray-800 dark:hover:bg-gray-800 dark:hover:text-gray-200" href="../profile/mostrar.php">
+                    <a class="inline-flex items-center w-full px-2 py-1 text-sm font-semibold transition-colors duration-150 rounded-md hover:bg-gray-100 hover:text-gray-800 dark:hover:bg-gray-800 dark:hover:text-gray-200" href="mostrar.php">
                       <svg class="w-4 h-4 mr-3" aria-hidden="true" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
                         <path d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
                       </svg>
                       <span>Perfil</span>
                     </a>
                   </li>
+
                   <li class="flex">
                     <a class="inline-flex items-center w-full px-2 py-1 text-sm font-semibold transition-colors duration-150 rounded-md hover:bg-gray-100 hover:text-gray-800 dark:hover:bg-gray-800 dark:hover:text-gray-200" href="#">
                       <svg class="w-4 h-4 mr-3" aria-hidden="true" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
@@ -225,14 +228,16 @@ if (!isset($_SESSION['cargo']) || $_SESSION['cargo'] != 1) {
                       <span>Configuracion</span>
                     </a>
                   </li>
+
                   <li class="flex">
-                    <a class="inline-flex items-center w-full px-2 py-1 text-sm font-semibold transition-colors duration-150 rounded-md hover:bg-gray-100 hover:text-gray-800 dark:hover:bg-gray-800 dark:hover:text-gray-200" href="../pages-logout.php">
+                    <a class="inline-flex items-center w-full px-2 py-1 text-sm font-semibold transition-colors duration-150 rounded-md hover:bg-gray-100 hover:text-gray-800 dark:hover:bg-gray-800 dark:hover:text-gray-200" href="../vista/pages-logout.php">
                       <svg class="w-4 h-4 mr-3" aria-hidden="true" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
                         <path d="M11 16l-4-4m0 0l4-4m-4 4h14m-5 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h7a3 3 0 013 3v1"></path>
                       </svg>
                       <span>Cerrar sesion</span>
                     </a>
                   </li>
+
                 </ul>
               </template>
             </li>
@@ -243,7 +248,7 @@ if (!isset($_SESSION['cargo']) || $_SESSION['cargo'] != 1) {
       <main class="h-full overflow-y-auto">
         <div class="container px-6 mx-auto grid">
           <h2 class="my-6 text-2xl font-semibold text-gray-700 dark:text-gray-200">
-            Usuarios
+            Perfil
           </h2>
           <!-- CTA -->
           <a class="flex items-center justify-between p-4 mb-8 text-sm font-semibold text-teal-100 bg-teal-600 rounded-lg shadow-md focus:outline-none focus:shadow-outline-teal" style="cursor: pointer;">
@@ -255,18 +260,14 @@ if (!isset($_SESSION['cargo']) || $_SESSION['cargo'] != 1) {
             </div>
 
           </a>
-          <!--------------------------------COMIENZA FORM----------------------------->
-          <h4 class="mb-4 text-lg font-semibold text-gray-600 dark:text-gray-300">
-            Cambiar contraseña
-          </h4>
+
           <?php
           function connect()
           {
             return new mysqli("localhost", "root", "", "proyecto_clinica");
           }
           $con = connect();
-          $id = $_GET['id'];
-          $sql = "SELECT * FROM usuarios  WHERE id= '$id'";
+          $sql = "SELECT * FROM profile";
           $query  = $con->query($sql);
           $data =  array();
           if ($query) {
@@ -279,32 +280,62 @@ if (!isset($_SESSION['cargo']) || $_SESSION['cargo'] != 1) {
           <?php if (count($data) > 0) : ?>
             <?php foreach ($data as $d) : ?>
               <div class="px-4 py-3 mb-8 bg-white rounded-lg shadow-md dark:bg-gray-800">
-                <form method="POST" autocomplete="off" action="../../folder/usuarios.php?id=<?php echo $d->id; ?>" role="form">
+
+                <form method="POST" autocomplete="off" enctype="multipart/form-data" role="form">
+
+                  <label class="block text-sm">
+                    <span class="text-gray-700 dark:text-gray-400">Nombres</span>
+                    <input disabled type="text" name="nombr" value="<?php echo $d->nombr; ?>" class="block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-teal-400 focus:outline-none focus:shadow-outline-teal dark:text-gray-300 dark:focus:shadow-outline-gray form-input" />
+                  </label>
+
+                  <label class="block text-sm">
+                    <span class="text-gray-700 dark:text-gray-400">RUC</span>
+                    <input disabled type="text" name="ruc" value="<?php echo $d->ruc; ?>" class="block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-teal-400 focus:outline-none focus:shadow-outline-teal dark:text-gray-300 dark:focus:shadow-outline-gray form-input" />
+                  </label>
+
+                  <label class="block text-sm">
+                    <span class="text-gray-700 dark:text-gray-400">Telefono</span>
+                    <input disabled type="text" name="telef" value="<?php echo $d->telef; ?>" class="block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-teal-400 focus:outline-none focus:shadow-outline-teal dark:text-gray-300 dark:focus:shadow-outline-gray form-input" />
+                  </label>
+
+                  <label class="block text-sm">
+                    <span class="text-gray-700 dark:text-gray-400">Correo</span>
+                    <input disabled type="text" name="corr" value="<?php echo $d->corr; ?>" class="block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-teal-400 focus:outline-none focus:shadow-outline-teal dark:text-gray-300 dark:focus:shadow-outline-gray form-input" />
+                  </label>
+
+                  <label class="block text-sm">
+                    <span class="text-gray-700 dark:text-gray-400">Direccion</span>
+                    <textarea disabled name="asunto" class="block w-full mt-1 text-sm dark:text-gray-300 dark:border-gray-600 dark:bg-gray-700 form-textarea focus:border-teal-400 focus:outline-none focus:shadow-outline-teal dark:focus:shadow-outline-gray" rows="3" placeholder="Enter some long form content."><?php echo $d->direcc; ?></textarea>
+                  </label>
 
 
                   <label class="block text-sm">
-                    <span class="text-gray-700 dark:text-gray-400">Contraseña nueva</span>
-                    <input name="clave" type="password" class="block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-teal-400 focus:outline-none focus:shadow-outline-teal dark:text-gray-300 dark:focus:shadow-outline-gray form-input" placeholder="*******" />
+                    <span class="text-gray-700 dark:text-gray-400">Descripcion</span>
+                    <textarea disabled name="descrip" class="block w-full mt-1 text-sm dark:text-gray-300 dark:border-gray-600 dark:bg-gray-700 form-textarea focus:border-teal-400 focus:outline-none focus:shadow-outline-teal dark:focus:shadow-outline-gray" rows="3" placeholder="Enter some long form content."><?php echo $d->descrip; ?></textarea>
                   </label>
 
-                  <footer class="flex flex-col items-center justify-end px-3 py-2 -mx-3 -mb-6 space-y-4 sm:space-y-0 sm:space-x-6 sm:flex-row bg-gray-50 dark:bg-gray-800">
-                    <button @click="closeModal" class="w-full px-5 py-3 text-sm font-medium leading-5 text-white text-gray-700 transition-colors duration-150 border border-gray-300 rounded-lg dark:text-gray-400 sm:px-4 sm:py-2 sm:w-auto active:bg-transparent hover:border-gray-500 focus:border-gray-500 active:text-gray-500 focus:outline-none focus:shadow-outline-gray">
-                      Cancelar
-                    </button>
-                    <button name="update9" class="w-full px-5 py-3 text-sm font-medium leading-5 text-white transition-colors duration-150 bg-teal-600 border border-transparent rounded-lg sm:w-auto sm:px-4 sm:py-2 active:bg-teal-600 hover:bg-teal-700 focus:outline-none focus:shadow-outline-teal">
-                      Actualizar
-                    </button>
-                  </footer>
+
+
 
                 </form>
 
               </div>
-            <?php endforeach; ?>
 
-          <?php else : ?>
-            <span class="px-2 py-1 font-semibold leading-tight text-red-700 bg-red-100 rounded-full dark:text-red-100 dark:bg-red-700">
-              No hay datos
-            </span>
-          <?php endif; ?>
+
         </div>
-        <?php require '../template/footer.php';  ?>
+        <!--------------------------------COMIENZA NEW MODAL----------------------------->
+
+      <?php endforeach; ?>
+
+    <?php else : ?>
+      <span class="px-2 py-1 font-semibold leading-tight text-red-700 bg-red-100 rounded-full dark:text-red-100 dark:bg-red-700">
+        No hay datos
+      </span>
+    <?php endif; ?>
+
+      </main>
+    </div>
+  </div>
+</body>
+
+</html>

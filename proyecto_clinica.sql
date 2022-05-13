@@ -7,7 +7,7 @@ SET time_zone = "+00:00";
 
 
 --
--- Base de datos: `proyecto_final`
+-- Base de datos: `proyecto_clinica`
 --
 
 -- --------------------------------------------------------

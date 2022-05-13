@@ -1,6 +1,6 @@
 <?php
 
-$conexion = mysqli_connect("localhost","root","","proyecto_final");
+$conexion = mysqli_connect("localhost","root","","proyecto_clinica");
 
 $el_continente = $_POST['continente'];
 

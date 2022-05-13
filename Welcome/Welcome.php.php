@@ -24,8 +24,8 @@
     <div class="nav">
         <nav class="nav">
             <a class="nav-link active" aria-current="page" href="pantalla.php" style="color: white;">Journal Clinical</a>
-            <a class="nav-link" href="Login.php" style="color: white;">Login</a>
-            <a class="nav-link" href="Registrarse.php" style="color: white;">Regístrate</a>
+            <a class="nav-link" href="../vista/page-login.php" style="color: white;">Login</a>
+            <a class="nav-link" href="#" style="color: white;">Regístrate</a>
             <a class="nav-link " href="#info" style="color: white;">Contáctanos</a>
         </nav>
 
